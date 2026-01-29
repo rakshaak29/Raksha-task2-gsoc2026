@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>3D Colored Pyramid - Bangalore</name>
+  <description>A 3D pyramid with 4 colored triangular faces at Bangalore</description>
+  
+  <!-- Style for each face with different colors -->
+  <Style id="redFace">
+    <PolyStyle>
+      <color>ff0000ff</color> <!-- Red (AABBGGRR format) -->
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+    <LineStyle>
+      <color>ff000000</color>
+      <width>2</width>
+    </LineStyle>
+  </Style>
+  
+  <Style id="greenFace">
+    <PolyStyle>
+      <color>ff00ff00</color> <!-- Green -->
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+    <LineStyle>
+      <color>ff000000</color>
+      <width>2</width>
+    </LineStyle>
+  </Style>
+  
+  <Style id="blueFace">
+    <PolyStyle>
+      <color>ffff0000</color> <!-- Blue -->
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+    <LineStyle>
+      <color>ff000000</color>
+      <width>2</width>
+    </LineStyle>
+  </Style>
+  
+  <Style id="yellowFace">
+    <PolyStyle>
+      <color>ff00ffff</color> <!-- Yellow -->
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+    <LineStyle>
+      <color>ff000000</color>
+      <width>2</width>
+    </LineStyle>
+  </Style>
+
+  <!-- Pyramid centered at Bangalore: 12.9716, 77.5946 -->
+  <!-- Base corners offset by ~0.005 degrees (~500m), apex at 500m height -->
+  
+  <!-- Face 1: Red (North) -->
+  <Placemark>
+    <name>North Face</name>
+    <styleUrl>#redFace</styleUrl>
+    <Polygon>
+      <extrude>0</extrude>
+      <altitudeMode>relativeToGround</altitudeMode>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates>
+            77.5896,12.9766,0
+            77.5996,12.9766,0
+            77.5946,12.9716,500
+            77.5896,12.9766,0
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  
+  <!-- Face 2: Green (East) -->
+  <Placemark>
+    <name>East Face</name>
+    <styleUrl>#greenFace</styleUrl>
+    <Polygon>
+      <extrude>0</extrude>
+      <altitudeMode>relativeToGround</altitudeMode>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates>
+            77.5996,12.9766,0
+            77.5996,12.9666,0
+            77.5946,12.9716,500
+            77.5996,12.9766,0
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  
+  <!-- Face 3: Blue (South) -->
+  <Placemark>
+    <name>South Face</name>
+    <styleUrl>#blueFace</styleUrl>
+    <Polygon>
+      <extrude>0</extrude>
+      <altitudeMode>relativeToGround</altitudeMode>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates>
+            77.5996,12.9666,0
+            77.5896,12.9666,0
+            77.5946,12.9716,500
+            77.5996,12.9666,0
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  
+  <!-- Face 4: Yellow (West) -->
+  <Placemark>
+    <name>West Face</name>
+    <styleUrl>#yellowFace</styleUrl>
+    <Polygon>
+      <extrude>0</extrude>
+      <altitudeMode>relativeToGround</altitudeMode>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates>
+            77.5896,12.9666,0
+            77.5896,12.9766,0
+            77.5946,12.9716,500
+            77.5896,12.9666,0
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+  
+  <!-- Base (optional - shows the pyramid base) -->
+  <Placemark>
+    <name>Base</name>
+    <Style>
+      <PolyStyle>
+        <color>80808080</color>
+        <fill>1</fill>
+      </PolyStyle>
+    </Style>
+    <Polygon>
+      <altitudeMode>relativeToGround</altitudeMode>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates>
+            77.5896,12.9766,0
+            77.5996,12.9766,0
+            77.5996,12.9666,0
+            77.5896,12.9666,0
+            77.5896,12.9766,0
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+
+</Document>
+</kml>

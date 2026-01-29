@@ -1,0 +1,45 @@
+# Misc
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code
+.vscode/
+
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub/
+build/
+
+# Generated files
+**/generated_plugin_registrant.*
+
+# Build outputs
+*.apk
+*.aab
+*.ipa
+
+# iOS
+ios/Pods/
+
+# macOS
+macos/Pods/
+
+# Linux
+linux/flutter/ephemeral/
+
+# Windows
+windows/flutter/ephemeral/
